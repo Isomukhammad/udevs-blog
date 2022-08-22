@@ -1,0 +1,15 @@
+.auth-dropdown-container{
+    position: absolute;
+    right: 0em;
+    top: 2em;
+    border-radius: .5em;
+    box-shadow: 0px 0px 10px lightgray;
+    
+    .auth-dropdown-links{
+        background-color: white;
+    }
+
+    .auth-dropdown-links{
+        border-radius: .5em;
+    }
+}

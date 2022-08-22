@@ -1,0 +1,25 @@
+.sign-in-container{
+    padding: 2em 4em;
+    border-radius: 8px;
+    width: 546px;   
+    border-radius: 1em;
+    background-color: white;
+    text-align: center;
+    z-index: 1;
+    
+    .sign-in-title{
+        margin-bottom: 2em;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sign-in-button-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

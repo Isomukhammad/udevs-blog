@@ -1,0 +1,1 @@
+export const selectStoriesMap = (state) => state.stories.stories;

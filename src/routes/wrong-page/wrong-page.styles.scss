@@ -1,0 +1,10 @@
+.wrong-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    .wrong-page-error{
+        width: 100px;
+    }
+}

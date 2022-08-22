@@ -1,0 +1,30 @@
+.sign-up-container{
+    margin-top: 2em;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 3em;
+
+    .sign-up-form{
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+
+        .sign-up-input{
+            width: 100%;
+
+            z-index: 0;
+        }
+
+        .sign-up-file-input{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

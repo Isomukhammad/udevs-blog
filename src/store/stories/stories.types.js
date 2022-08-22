@@ -1,0 +1,5 @@
+const STORIES_ACTION_TYPE = {
+    SET_STORIES_MAP: 'SET_STORIES_MAP'
+}
+
+export default STORIES_ACTION_TYPE;

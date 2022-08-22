@@ -1,0 +1,38 @@
+.blog-info-container{
+    img{
+        width: 100%;
+        border-radius: 1em;
+    }
+
+    .author{
+        margin: .5em 0;
+    }
+
+    .blog-time{
+        margin: .5em 0;
+        color: grey;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+
+        div{
+            display: flex;
+            align-items: center;
+
+            span{
+                margin-left: .2em;
+            }
+        }
+    }
+
+    h1{
+        margin: 1em 0;
+        line-height: 37.5px;
+    }
+
+    p{
+        line-height: 2em;
+        font-size: 18px;
+    }
+}

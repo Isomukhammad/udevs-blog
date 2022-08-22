@@ -1,0 +1,23 @@
+.story-component{
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 105px;
+        height: 105px;
+        background: linear-gradient(to right, #FFD06B, #FC4D82
+        );
+        border-radius: 50%;
+        cursor: pointer;
+
+        img{
+            background-color: white;
+            padding: 3px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            object-fit: cover;
+        }
+    }
+}

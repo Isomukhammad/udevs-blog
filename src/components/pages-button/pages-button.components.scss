@@ -1,0 +1,18 @@
+.pages-button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .5em;
+
+    button{
+        min-width: 1em;
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: .6em; 
+    }
+
+    .page-button{
+        background-color: #4094F7;
+    }
+}
