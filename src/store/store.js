@@ -7,7 +7,7 @@ const middleWares = [process.env.NODE_ENV !== 'development' && logger, thunk].fi
     Boolean
 )
 
-const composeEnhansers = (process.env.NODE_ENV !== 'production' && window && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose; 
+const composeEnhansers = (process.env.NODE_ENV !== 'development' && window && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose; 
 
 const composedEnhansers = composeEnhansers(applyMiddleware(...middleWares));
 
