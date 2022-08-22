@@ -2,6 +2,7 @@
   "name": "udevs-blog",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Isomukhammad.github.io/udevs-blog",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
