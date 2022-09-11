@@ -1,11 +1,10 @@
 .post-container{
     height: 100%;
-    padding: 0 9em;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     form{
-        width: 60%;
         display: flex;
         flex-direction: column;
         
@@ -38,8 +37,16 @@
             margin: 1em 0;
             padding: 1em;
             border-radius: 2em;
-            width: 25%;
+            width: fit-content;
+            align-self: center;
         }
     }
 }
 
+@media screen and (min-width: 768px){
+    .post-container{
+        form{
+            width: 60%;
+        }
+    }
+}

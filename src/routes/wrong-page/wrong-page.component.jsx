@@ -1,17 +1,21 @@
 import {ReactComponent as ErrorLogo} from '../../assets/error.svg'
+import Navigation from '../../components/navigation/navigation.component';
 
-import './wrong-page.styles.scss';
+import styles from './wrong-page.module.scss';
 
 const WrongPage = () => {
     return(
-        <div className="wrong-page-container">
-            <div className='wrong-page-error'>
-                <ErrorLogo/>
-            </div>       
+        <div className={styles.div}>
+            <Navigation/>
+            <div className={styles.wrongPage}>
+                <div className={styles.errorImg}>
+                    <ErrorLogo/>
+                </div>       
 
-            <div>
-                <h1>Такой страницы не существует. Попробуйте ещё!</h1>
-            </div>     
+                <div>
+                    <h1>Такой страницы не существует. Попробуйте ещё!</h1>
+                </div>     
+            </div>
         </div>
     )
 }

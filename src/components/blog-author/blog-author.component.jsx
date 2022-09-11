@@ -6,9 +6,10 @@ import { Button } from '@mui/material';
 import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 
-import './blog-author.styles.scss';
 import { deleteBlog } from '../../utils/firebase/firebase.utils';
 import { useNavigate } from 'react-router-dom';
+
+import styles from './blog-author.module.scss';
 
 const BlogAuthor = ({profileData, user, newArray}) => {
     const [favorite, setFavorite] = useState(false);
@@ -40,7 +41,7 @@ const BlogAuthor = ({profileData, user, newArray}) => {
     }, [newArray])
 
     return(
-        <div className="blog-author-container">
+        <div className={styles.div}>
         {!profileData ? (null) : (
         <>
             <img src = {profileData.photoURL} className = 'author-img'/>
@@ -67,7 +68,7 @@ const BlogAuthor = ({profileData, user, newArray}) => {
             )
             }
 
-            <div className='follow-favorite-button'>
+            <div className = {styles.button}>
                 {!user ? null : (
                     user.uid != newArray.uid ? (
                     <>

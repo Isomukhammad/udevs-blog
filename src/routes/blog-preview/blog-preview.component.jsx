@@ -8,11 +8,14 @@ import { selectBlogsMap, selectBlogsMapIsLoading } from '../../store/blogs/blogs
 
 import { setLocaleTime } from '../../utils/LocaleTime';
 
-import './blog-preview.styles.scss';
 import { selectCurrentUser } from '../../store/user/user.selector';
 import { fetchBlogsAsync } from '../../store/blogs/blogs.action';
 import BlogInfo from '../../components/blog-info/blog-info.component';
 import BlogAuthor from '../../components/blog-author/blog-author.component';
+import Navigation from '../../components/navigation/navigation.component';
+
+import styles from './blog-preview.module.scss';
+import Spinner from '../../components/spinner/spinner.component';
 
 const BlogPreview = () => {
     const dispatch = useDispatch();
@@ -55,22 +58,28 @@ const BlogPreview = () => {
     }, [blogs, isLoad]);
 
     return(
-        <div className="blog-preview-container">
-            {isLoading ? null : (
-            <>
-                <BlogAuthor 
-                    profileData = {profileData} 
-                    user = {user}
-                    newArray = {newArray}
-                />                
-                <BlogInfo 
-                    newArray = {newArray} 
-                    time = {time} 
-                    id = {id}
-                />
-            </>
-            )}
-        </div>
+        <>
+        {isLoading ? (
+            <Spinner/>
+        ) : (
+            <div className = {styles.div}>
+                <Navigation/>
+
+                <div className= {styles.blogPreviewContainer}>
+                    <BlogAuthor 
+                        profileData = {profileData} 
+                        user = {user}
+                        newArray = {newArray}
+                    />                
+                    <BlogInfo 
+                        newArray = {newArray} 
+                        time = {time} 
+                        id = {id}
+                    />
+                </div>
+            </div>
+        )}
+        </>
     )
 }
 

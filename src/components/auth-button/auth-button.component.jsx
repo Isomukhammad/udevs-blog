@@ -10,6 +10,7 @@ import { Button } from "@mui/material";
 
 import './auth-button.styles.scss';
 import AuthenticationPopup from "../auth-popup/auth-popup.component";
+import AuthDropdown from "../auth-dropdown/auth-dropdown.component";
 
 const AuthenticationButton = () => {
     const dispatch = useDispatch();
@@ -47,6 +48,13 @@ const AuthenticationButton = () => {
                     className = 'navigation-user-img' 
                     onClick = {toggleIsAuthdropdownOpen}
                 />
+            )}
+
+            { !isAuthdropdownOpen ? null : (
+                <div>
+                    <div className='auth-dropdown-triangle'>▲</div>
+                    <AuthDropdown/>
+                </div>
             )}
         </div>
     )

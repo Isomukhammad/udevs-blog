@@ -12,6 +12,7 @@ import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { translit } from '../../utils/CirToLat';
 
 import './post.styles.scss'
+import Navigation from '../../components/navigation/navigation.component';
 
 
 const blogInfo = {
@@ -109,6 +110,7 @@ const Post = () => {
 
     return(
         <div className="post-container">
+            <Navigation/>
             <h2>Настройки публикации</h2>
             
             <form onSubmit = {handleSubmit}>

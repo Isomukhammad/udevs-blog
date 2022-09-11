@@ -11,7 +11,7 @@ const BlogItem = ({blog}) => {
     const onNavigateHandler = () => navigate(`/${category}/${id}/${url}`);
 
     return(
-        <div className="blog-item-container">
+        <div className="blog-item-container">  
             <img src={imageURL} onClick = {onNavigateHandler} alt = 'Blog'/>
             <div className='blog-item-description'>
                 <div>

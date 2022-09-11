@@ -5,7 +5,7 @@ import { selectBlogsMap } from '../../store/blogs/blogs.selector';
 import BlogItem from '../blog-item/blog-item.component';
 import PageButton from '../pages-button/pages-button.components';
 
-import './blogs.styles.scss';
+import styles from './blogs.module.scss';
 
 const Blogs = () => {
     const blogs = useSelector(selectBlogsMap);
@@ -13,7 +13,7 @@ const Blogs = () => {
     const [pageNumber, setPageNumber] = useState(1);
 
     return(
-        <div className="blogs-container">
+        <div className = {styles.div}>
             {
                 blogs.slice(5*(pageNumber-1), 5*pageNumber).map((blog) => (
                     <BlogItem key = {blog.id} blog = {blog} />

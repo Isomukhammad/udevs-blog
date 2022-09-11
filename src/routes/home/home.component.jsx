@@ -12,6 +12,7 @@ import Spinner from '../../components/spinner/spinner.component';
 import StoriesRow from '../../components/stories-row/stories-row.component';
 
 import './home.styles.scss';
+import Navigation from '../../components/navigation/navigation.component';
 
 const Home = () => {
     const dispatch = useDispatch();
@@ -28,6 +29,7 @@ const Home = () => {
                     <Spinner/>
                 </div> : 
                 <div>
+                    <Navigation/>
                     <StoriesRow/>
                     <Blogs/>
                     <Footer/>

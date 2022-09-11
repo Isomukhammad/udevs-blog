@@ -1,13 +1,21 @@
 .story-container{
+    position: fixed;
     display: flex;
     justify-content: space-between;
     background-color: black;
     height: 100vh;
+    width: 100vw;
+    left: 0;
     padding: 1em;
 
     .story-display{
         align-self: center;
         border-radius: 1em;
+        width: 40vw;
+
+        div{
+            width: 40vw;
+        }
     }
 
     .see-more-button{

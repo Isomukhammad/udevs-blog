@@ -1,13 +1,11 @@
 .navigation-container{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     background-color: white;
-    position: relative;
-    top: 0;
     height: 88px;
-    padding: 1em 9em;
+    width: 100%;
+    padding: 1em;
 
     .auth-container{
         display: flex;

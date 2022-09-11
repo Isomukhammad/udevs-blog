@@ -9,7 +9,6 @@ import { setCurrentUser, setUserInfo } from './store/user/user.action';
 
 import { createUserDocumentFromAuth, onAuthStateListener, writeUserData } from './utils/firebase/firebase.utils';
 
-import Navigation from './routes/navigation/navigation.component';
 import Home from './routes/home/home.component';
 import SignUp from './components/sign-up/sign-up.component';
 import Post from './routes/post/post.component';
@@ -44,15 +43,13 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path = '/' element = {<Navigation/>}>
-          <Route index element = {<Home/>}/>
-          <Route path = 'signup' element = {currentUser ? <Navigate to = '/' replace/> : <SignUp/>}/>
-          <Route path = 'writepost' element = {currentUser ? <Post/> : <Navigate to = '/' replace/>}/>
-          <Route path = 'favorites' element = {currentUser ? <Favorites/> : <Navigate to = '/' replace/>}/>
-          <Route path = '/:category/:id/:url' element = {<BlogPreview/>}/>
-          <Route path = '/*' element = {<WrongPage/>}/>
-        </Route>
+        <Route index element = {<Home/>}/>
+        <Route path = 'signup' element = {currentUser ? <Navigate to = '/' replace/> : <SignUp/>}/>
+        <Route path = 'writepost' element = {currentUser ? <Post/> : <Navigate to = '/' replace/>}/>
+        <Route path = 'favorites' element = {currentUser ? <Favorites/> : <Navigate to = '/' replace/>}/>
+        <Route path = '/:category/:id/:url' element = {<BlogPreview/>}/>
 
+        <Route path = '*' element = {<WrongPage/>}/>
         <Route path = '/stories/' element = {<Story/>}/>
       </Routes>
     </div>

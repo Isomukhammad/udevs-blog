@@ -17,7 +17,11 @@ const BlogInfo = ({newArray, id, time}) => {
 
     return(
         <div className="blog-info-container">
-            <img src={newArray.imageURL} alt="image"/>
+            <img 
+                src={newArray.imageURL} 
+                alt="Image"
+                style = {{objectFit: 'cover'}}
+            />
             <div className='author'><i>Фото: {newArray.author}</i></div>
             {!time ? (null) : (
                 <div className='blog-time'>

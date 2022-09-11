@@ -31,13 +31,6 @@ const AuthenticationPopup = () => {
                     <Authentication/>
                 </div>
             )}
-
-            { !isAuthdropdownOpen ? null : (
-                <div>
-                    <div className='auth-dropdown-triangle'>▲</div>
-                </div>
-            )}
-            <AuthDropdown/>
         </div>
     )
 }

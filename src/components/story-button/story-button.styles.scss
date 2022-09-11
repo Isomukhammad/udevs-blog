@@ -3,8 +3,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 105px;
-        height: 105px;
+        width: 80px;
+        height: 80px;
         background: linear-gradient(to right, #FFD06B, #FC4D82
         );
         border-radius: 50%;
@@ -13,11 +13,20 @@
         img{
             background-color: white;
             padding: 3px;
-            width: 100px;
-            height: 100px;
+            width: 92%;
+            height: 92%;
             border-radius: 50%;
             overflow: hidden;
             object-fit: cover;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .story-component{
+        div{
+            width: 105px;
+            height: 105px;
         }
     }
 }
