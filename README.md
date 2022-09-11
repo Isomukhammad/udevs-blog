@@ -4,12 +4,12 @@
 
 What is used:
 
--SASS
--Material UI
--React
--React Redux
--React Router
--Firebase
+- SASS
+- Material UI
+- React
+- React Redux
+- React Router
+- Firebase
 
 ## Screenshots
 
