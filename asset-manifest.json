@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/udevs-blog/static/css/main.0da738b8.css",
-    "main.js": "/udevs-blog/static/js/main.5300c695.js",
+    "main.css": "/udevs-blog/static/css/main.d1a54b8d.css",
+    "main.js": "/udevs-blog/static/js/main.e0361095.js",
     "static/js/787.75de67c6.chunk.js": "/udevs-blog/static/js/787.75de67c6.chunk.js",
     "static/media/error.svg": "/udevs-blog/static/media/error.e2e80666202b9effa9b4a4b14fe8e507.svg",
     "static/media/udevs.svg": "/udevs-blog/static/media/udevs.8596c328cab59c1a69110d2a6dfa6431.svg",
     "index.html": "/udevs-blog/index.html",
-    "main.0da738b8.css.map": "/udevs-blog/static/css/main.0da738b8.css.map",
-    "main.5300c695.js.map": "/udevs-blog/static/js/main.5300c695.js.map",
+    "main.d1a54b8d.css.map": "/udevs-blog/static/css/main.d1a54b8d.css.map",
+    "main.e0361095.js.map": "/udevs-blog/static/js/main.e0361095.js.map",
     "787.75de67c6.chunk.js.map": "/udevs-blog/static/js/787.75de67c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0da738b8.css",
-    "static/js/main.5300c695.js"
+    "static/css/main.d1a54b8d.css",
+    "static/js/main.e0361095.js"
   ]
 }
