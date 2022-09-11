@@ -77,11 +77,14 @@ const Story = () => {
         <>
         { isLoading == true ? (null) : (
         <div className="story-container">
-            <Logo/>
+            <div className="story-nav">
+                <Logo/>
+                <CloseIcon color="primary" className = 'close-button' style = {{cursor: 'pointer'}} onClick = {onNavigateHandler}/>
+            </div>
 
             <div className="story-display">
                 <Stories 
-                    width={"30vw"}
+                    width={"300px"}
                     height={'90vh'}
                     stories={stories}
                     defaultInterval={5000}   
@@ -89,8 +92,6 @@ const Story = () => {
                     keyboardNavigation = 'true'
                 />
             </div>
-
-            <CloseIcon color="primary" className = 'close-button' style = {{cursor: 'pointer'}} onClick = {onNavigateHandler}/>
         </div>
         )}
         </>

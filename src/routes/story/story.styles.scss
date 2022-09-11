@@ -1,21 +1,24 @@
 .story-container{
     position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     background-color: black;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     left: 0;
     padding: 1em;
+
+    .story-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
 
     .story-display{
         align-self: center;
         border-radius: 1em;
-        width: 40vw;
-
-        div{
-            width: 40vw;
-        }
     }
 
     .see-more-button{
