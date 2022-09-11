@@ -15,7 +15,7 @@ const Navigation = () => {
                 <Logo/>                    
                 <NavLinks/>
                 <div className='navigation-popup'>
-                <AuthenticationPopup/>
+                    <AuthenticationPopup/>
                 </div>
                 <AuthenticationButton/>
             </div>
