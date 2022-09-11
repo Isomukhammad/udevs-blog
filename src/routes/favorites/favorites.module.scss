@@ -1,5 +1,15 @@
-.container{
+.favoritesContainer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media screen and (min-width: 1150px) {
+    .favoritesContainer{
+        position: relative;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

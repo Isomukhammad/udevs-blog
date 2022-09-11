@@ -1,6 +1,36 @@
 .nav-links-container{
-    display: none;
+    display: flex;
+    grid-column: 1/-1;
+    grid-row: 2/3;
     a{
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .nav-links-container{
+        background-color: rgba(0, 0, 0, 0.048);
+        border-radius: 0.8em;
+        width: 100%;
+        justify-self: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        a{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .nav-links-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 360px){
+    .nav-links-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }

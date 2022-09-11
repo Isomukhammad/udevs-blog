@@ -84,7 +84,7 @@ const Story = () => {
 
             <div className="story-display">
                 <Stories 
-                    width={"300px"}
+                    minWidth={"800px"}
                     height={'90vh'}
                     stories={stories}
                     defaultInterval={5000}   

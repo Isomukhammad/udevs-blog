@@ -14,7 +14,9 @@ const Navigation = () => {
             <div className='navigation-container'>
                 <Logo/>                    
                 <NavLinks/>
+                <div className='navigation-popup'>
                 <AuthenticationPopup/>
+                </div>
                 <AuthenticationButton/>
             </div>
             <Outlet/>
